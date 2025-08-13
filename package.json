@@ -1,0 +1,11 @@
+{
+  "name": "node-red-contrib-anchor",
+  "version": "1.0.0",
+  "description": "Tiny pass-through anchor node for cleaner wiring",
+  "keywords": ["node-red", "anchor", "passthrough", "wiring"],
+  "repository": "https://github.com/DEINUSER/node-red-contrib-anchor",
+  "author": "DEIN NAME",
+  "license": "MIT",
+  "node-red": { "nodes": { "anchor": "anchor.js" } },
+  "files": ["anchor.js", "anchor.html", "README.md", "LICENSE", "package.json"]
+}
