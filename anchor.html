@@ -1,0 +1,33 @@
+<script type="text/html" data-template-name="anchor">
+  <div class="form-row">
+    <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+    <input type="text" id="node-input-name" placeholder="optional">
+  </div>
+</script>
+
+<script type="text/html" data-help-name="anchor">
+  <p>Optischer Ankerpunkt. Reicht <code>msg</code> unverändert weiter.</p>
+</script>
+
+<script type="text/javascript">
+RED.nodes.registerType('anchor',{
+  category:'function',
+  color:'#dddddd',
+  defaults:{ name:{value:""} },
+  inputs:1, outputs:1,
+  align:'center',
+  paletteLabel:"anchor",
+  icon:"white-globe.svg",
+  label:function(){ return this.name || "•"; },
+  labelStyle:function(){ return "node_label_italic"; }
+});
+</script>
+
+<style>
+.red-ui-editor .red-ui-flow-node[data-type="anchor"]{min-width:18px!important;width:22px!important}
+.red-ui-editor .red-ui-flow-node[data-type="anchor"] .red-ui-flow-node-label{font-size:14px;padding:0}
+.red-ui-editor .red-ui-flow-node[data-type="anchor"] .red-ui-flow-node-icon-shade{display:none}
+.red-ui-editor .red-ui-flow-node[data-type="anchor"] .red-ui-flow-node-icon{
+  width:10px;height:10px;border-radius:50%;border:1px solid #888;background:#f8f8f8;margin:6px auto;
+}
+</style>
